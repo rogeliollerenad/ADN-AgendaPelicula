@@ -4,7 +4,7 @@ import { LandingPage } from 'pages/Landing';
 import { SessionContext } from 'context/SessionContext';
 import { ConditionalRoute } from 'components/ConditionalRoute';
 
-const App: React.FC = () => {
+const APP: React.FC = () => {
   const {
     data: { sessionId },
   } = useContext(SessionContext);
@@ -28,4 +28,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default APP;
