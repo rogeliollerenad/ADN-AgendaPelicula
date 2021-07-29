@@ -1,40 +1,13 @@
 {
-  "orders": [
-    {
-      "promotions": [],
-      "films": [
-        {
-          "film": {
-            "id": 11,
-            "name": "Pesto pasta",
-            "type": "ACCION",
-            "price": "9.50",
-            "cover": "pesto-pasta.jpg",
-            "description": "Pesto pasta with pine nuts and mozzarella"
-          },
-          "quantity": 1
-        },
-        {
-          "film": {
-            "id": 12,
-            "name": "Michelada",
-            "type": "AVENTURA",
-            "price": "7.00",
-            "cover": "michelada.jpg",
-            "description": "Mexican alcoholic drink that is prepared by mixing beer, lemon juice, spicy and salt"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 1
-    }
-  ],
   "film": {
     "films": [
       {
         "id": 1,
         "name": "It's over",
         "type": "ACCION",
+        "released": "10/20/2000",
+        "time": "170",
+        "score": "4,5",
         "price": "8.50",
         "cover": "movie5.jpg",
         "description": "European mercenaries searching for black powder become embroiled in the defense of It's over of China against a horde of monstrous creatures."
@@ -43,6 +16,9 @@
         "id": 2,
         "name": "Dark and lonely",
         "type": "AVENTURA",
+        "released": "05/23/2018",
+        "time": "120",
+        "score": "3,5",
         "price": "9.05",
         "cover": "movie6.jpg",
         "description": "A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a rough neighborhood of Miami."
@@ -51,6 +27,9 @@
         "id": 3,
         "name": "Locked in",
         "type": "ACCION",
+        "released": "03/30/2010",
+        "time": "80",
+        "score": "3,8",
         "price": "11.00",
         "cover": "movie9.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -59,6 +38,9 @@
         "id": 4,
         "name": "The end of days",
         "type": "DRAMA",
+        "released": "02/12/2009",
+        "time": "60",
+        "score": "4,5",
         "price": "6.80",
         "cover": "movie8.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -67,6 +49,9 @@
         "id": 5,
         "name": "HUSH",
         "type": "ACCION",
+        "released": "12/19/2012",
+        "time": "180",
+        "score": "4,5",
         "price": "10.00",
         "cover": "movie4.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -75,6 +60,9 @@
         "id": 6,
         "name": "White Russian",
         "type": "FENCES",
+        "released": "10/20/2000",
+        "time": "170",
+        "score": "4,5",
         "price": "9.20",
         "cover": "movie7.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -83,6 +71,9 @@
         "id": 7,
         "name": "Daylight",
         "type": "ACCION",
+        "released": "09/01/2017",
+        "time": "170",
+        "score": "2,3",
         "price": "9.50",
         "cover": "movie3.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -91,6 +82,9 @@
         "id": 8,
         "name": "Venture",
         "type": "AVENTURA",
+        "released": "10/10/2010",
+        "time": "190",
+        "score": "4,8",
         "price": "8.00",
         "cover": "movie2.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -99,6 +93,9 @@
         "id": 9,
         "name": "The Last Post",
         "type": "DRAMA",
+        "released": "10/20/2000",
+        "time": "50",
+        "score": "4,0",
         "price": "7.50",
         "cover": "movie1.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -107,6 +104,9 @@
         "id": 10,
         "name": "End of an empire",
         "type": "AVENTURA",
+        "released": "11/08/2005",
+        "time": "170",
+        "score": "3,5",
         "price": "9.00",
         "cover": "movie10.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -115,6 +115,9 @@
         "id": 11,
         "name": "The comedian",
         "type": "ACCION",
+        "released": "11/06/2008",
+        "time": "80",
+        "score": "3,5",
         "price": "9.50",
         "cover": "movie11.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -123,6 +126,9 @@
         "id": 12,
         "name": "Deepwater horizon",
         "type": "AVENTURA",
+        "released": "04/03/2016",
+        "time": "90",
+        "score": "2,5",
         "price": "7.00",
         "cover": "movie12.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
@@ -131,88 +137,12 @@
         "id": 13,
         "name": "Too fast",
         "type": "DRAMA",
+        "released": "11/09/2003",
+        "time": "170",
+        "score": "4,5",
         "price": "7.20",
         "cover": "movie13.jpg",
         "description": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima."
-      }
-    ],
-    "promotions": [
-      {
-        "id": 1,
-        "name": "Main and Drink",
-        "cover": "special-offer.png",
-        "closedPrice": null,
-        "customizable": [
-          {
-            "filmType": "DRINK",
-            "quantity": 1
-          },
-          {
-            "filmType": "MAIN",
-            "quantity": 1
-          }
-        ],
-        "description": "Hot offer! Get 10% off each main and drink combo",
-        "discountPercentage": 10,
-        "closedValues": []
-      },
-      {
-        "id": 2,
-        "name": "Hungry Date",
-        "cover": "special-offer.png",
-        "closedPrice": "40.00",
-        "customizable": [
-          {
-            "filmType": "DRINK",
-            "quantity": 2
-          },
-          {
-            "filmType": "MAIN",
-            "quantity": 2
-          },
-          {
-            "filmType": "DESSERT",
-            "quantity": 1
-          }
-        ],
-        "description": "Hungry Date Offer! Get 2 mains + 2 drinks + 1 dessert in special price",
-        "discountPercentage": null,
-        "closedValues": []
-      },
-      {
-        "id": 3,
-        "name": "Colombian lunch",
-        "cover": "colombia.png",
-        "closedPrice": "20.40",
-        "customizable": [],
-        "description": "Get a full colombian experience with bandeja paisa, michelada and mazamorra combo",
-        "discountPercentage": null,
-        "closedValues": [
-          {
-            "id": 7,
-            "name": "Bandeja paisa",
-            "type": "ACCION",
-            "price": "9.50",
-            "cover": "bandeja-paisa.jpg",
-            "description": "Tray with beans, pork rinds, ground beef and rice. Accompanied by ripe banana and avocado"
-          },
-          {
-            "id": 12,
-            "name": "Michelada",
-            "type": "AVENTURA",
-            "price": "7.00",
-            "cover": "michelada.jpg",
-            "description": "Mexican alcoholic drink that is prepared by mixing beer, lemon juice, spicy and salt"
-          },
-          {
-            "id": 13,
-            "name": "Mazamorra",
-            "type": "DRAMA",
-            "price": "7.20",
-            "cover": "mazamorra.jpg",
-            "description": "Dessert prepared with very well cooked peeled corn, and sweetened with raw sugar cane cubes"
-          }
-        ]
       }
     ]
   }

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { LandingPage } from 'pages/Landing';
+import { FilmMenuPage } from 'pages/FilmMenu';
+import { FilmDetails } from 'pages/FilmDetails';
 import { SessionContext } from 'context/SessionContext';
 import { ConditionalRoute } from 'components/ConditionalRoute';
 
@@ -11,12 +13,19 @@ const App: React.FC = () => {
   return (
     <Router>
       <Switch>
-        {/* <ConditionalRoute
+        <ConditionalRoute
+          path="/film/details/:id"
+          canActivate={sessionId !== undefined}
+          redirectTo="/"
+          component={FilmDetails}
+        />
+        <ConditionalRoute
           path="/film"
           canActivate={sessionId !== undefined}
           redirectTo="/"
           component={FilmMenuPage}
-        /> */}
+        />
+
         <ConditionalRoute
           path="/"
           canActivate={sessionId === undefined}

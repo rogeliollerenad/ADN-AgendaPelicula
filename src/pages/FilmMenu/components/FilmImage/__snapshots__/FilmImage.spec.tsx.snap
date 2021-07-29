@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmImage Test should match snapshot 1`] = `
+<div>
+  <img
+    alt="Film item"
+    src="/images/film.jpg"
+  />
+</div>
+`;

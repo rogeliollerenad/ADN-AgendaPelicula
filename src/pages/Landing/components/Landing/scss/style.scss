@@ -2,7 +2,10 @@
 @import '../../../../../assets/sass/colors';
 
 body {
-  background-color: $color-golden;
+  background: linear-gradient(to bottom, $color-black, $color-gris);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
 }
 .text-black {
@@ -40,7 +43,7 @@ img{
 .wrap-login {
   width: 520px;
   min-height: 100vh;
-  background: $color-black;
+  background: linear-gradient(to top, $color-black, $color-gris);
   position: relative;
 }
 
@@ -126,7 +129,7 @@ input{
   [ Responsive ]*/
 
 @media (max-width: 576px) {
-  .wrap-login100 {
+  .wrap-login {
     padding-left: 15px;
     padding-right: 15px;
   }

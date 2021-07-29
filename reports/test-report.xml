@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+    <file path="D:\ticket\src\pages\FilmMenu\components\FilmImage\FilmImage.spec.tsx">
+        <testCase name="FilmImage Test should match snapshot" duration="65"/>
+    </file>
     <file path="D:\ticket\src\context\SessionContext.spec.ts">
-        <testCase name="Session Context text debería crear sesion" duration="37"/>
+        <testCase name="Session Context text debería crear sesion" duration="42"/>
+    </file>
+    <file path="D:\ticket\src\pages\FilmMenu\components\Cards\FilmCard\FilmCard.spec.tsx">
+        <testCase name="FilmCard Test should match snapshot" duration="299"/>
     </file>
 </testExecutions>

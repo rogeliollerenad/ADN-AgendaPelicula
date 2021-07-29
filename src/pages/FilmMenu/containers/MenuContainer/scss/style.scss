@@ -1,0 +1,25 @@
+@import '../../../../../assets/sass/colors';
+img{
+    max-width: 100%;
+    height: auto;
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu-items{
+    width: 100% !important;
+    background-color: transparent !important;
+}
+.MuiBottomNavigationAction-root{
+    color: $color-white !important;
+}
+.MuiBottomNavigationAction-root.Mui-selected{
+    color: $color-golden !important;
+}
+.wrap-menulogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
