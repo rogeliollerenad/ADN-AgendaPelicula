@@ -13,7 +13,6 @@ export const FilmContainer: React.FC = () => {
 
   const [confirmFilm, setConfirmFilm] = useState<FilmModel>();
   const [openDialog, setOpenDialog] = useState(false);
-  const classes = useStyles();
 
   const handleDialog = (film: FilmModel) => {
     setOpenDialog(true);
