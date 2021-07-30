@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Moment from 'react-moment';
+import currencyFormatter from 'currency-formatter';
 import {
   Dialog,
   DialogContent,
@@ -67,9 +68,6 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
     if (weekDay > 6) {
       setShowPrice(price * 1.15);
     }
-
-    console.log(selectedDate);
-    console.log(price);
   }, [selectedDate, price]);
 
   return (
@@ -173,7 +171,7 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
                         className="dialog-card-price"
                       >
                         <span style={{ color: '#000' }}>Precio: </span>
-                        {showPrice}
+                        {currencyFormatter.format(showPrice, { code: 'USD' })}
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
