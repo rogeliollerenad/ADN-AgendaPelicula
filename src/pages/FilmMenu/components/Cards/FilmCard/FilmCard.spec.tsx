@@ -25,7 +25,7 @@ describe('FilmCard Test', () => {
         time: 120,
         score: '4,5',
         released: '08/12/2020',
-        type: 'ACCION'
+        type: 'ACCION',
       },
       onFilmSelected: jest.fn(),
     };

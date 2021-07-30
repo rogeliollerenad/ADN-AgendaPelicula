@@ -1,7 +1,6 @@
 import nock from 'nock';
 import { MenuModel } from 'pages/FilmMenu/models/MenuModel';
 import * as filmFixture from 'tests/fixtures/film.fixture';
-import * as promotionFixture from 'tests/fixtures/promotion.fixture';
 import { FilmTypeEnum } from 'pages/FilmMenu/models/FilmTypeEnum';
 import * as filmService from './filmService';
 
@@ -11,9 +10,6 @@ describe('film service test', () => {
   beforeEach(() => {
     menu = {
       films: filmFixture.getList({ type: FilmTypeEnum.ACCION }),
-      promotions: promotionFixture.getList({
-        customizable: [{ filmType: FilmTypeEnum.ACCION, quantity: 1 }],
-      }),
     };
   });
   it('should fetch filmMenu', async () => {
@@ -27,7 +23,6 @@ describe('film service test', () => {
 
   it('should filter filmMenu', () => {
     const expectedMenu: MenuModel = {
-      promotions: [],
       films: [],
     };
     const filtered = filmService.filterMenuByType(menu, FilmTypeEnum.DRAMA);

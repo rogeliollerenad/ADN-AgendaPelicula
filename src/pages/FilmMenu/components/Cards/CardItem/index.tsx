@@ -49,18 +49,13 @@ export const CardItem: React.FC<CardItemProps> = ({
     threshold: 0,
     triggerOnce: true,
   });
-
-  // const start = moment(released);
-  // const numberFecha = start.day();
-  // const weekday = start.isoWeekday();
-  // console.log(weekday, title);
   return (
     <>
       <Grid item xs={12} sm={6} md={4} lg={4} ref={ref}>
         <Card>
           <CardActionArea>
             <CardMedia title={title}>
-              {inView && <FilmImage cover={cover} className={classes.img} />}
+              <FilmImage cover={cover} className={classes.img} />
             </CardMedia>
             <CardContent className="card-wrap-content">
               <Typography gutterBottom variant="h5" component="h2">

@@ -7,14 +7,9 @@ export interface FilmCardProps {
   film: FilmModel;
   onFilmSelected: (film: FilmModel) => void;
   className?: string;
-  isPreparing: boolean;
 }
 
-export const FilmCard: React.FC<FilmCardProps> = ({
-  film,
-  onFilmSelected,
-  isPreparing,
-}) => {
+export const FilmCard: React.FC<FilmCardProps> = ({ film, onFilmSelected }) => {
   return (
     <>
       <CardItem
@@ -27,7 +22,6 @@ export const FilmCard: React.FC<FilmCardProps> = ({
         time={film.time}
         score={film.score}
         buttonText="Comprar"
-        disabled={isPreparing}
         onSelected={() => {
           onFilmSelected(film);
         }}

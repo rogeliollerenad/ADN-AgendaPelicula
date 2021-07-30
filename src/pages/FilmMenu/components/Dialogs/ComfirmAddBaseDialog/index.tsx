@@ -1,27 +1,17 @@
-import React, { useContext, useEffect } from 'react';
-import Moment from 'react-moment';
-import currencyFormatter from 'currency-formatter';
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  Grid,
-  Typography,
-} from '@material-ui/core';
-import { GiRoundStar, GiBackwardTime, GiCalendar } from 'react-icons/gi';
-import 'moment/locale/es';
-import moment from 'moment';
+import { Dialog, Grid, Typography } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import { Transition } from 'components/Transition';
-import { ButtonClose } from 'pages/FilmMenu/components/Buttons/ButtonClose';
+import currencyFormatter from 'currency-formatter';
+import moment from 'moment';
+import 'moment/locale/es';
 import { MaterialUIPickers } from 'pages/FilmMenu/components/Calendar';
 import { FilmImage } from 'pages/FilmMenu/components/FilmImage';
-import { useStyles } from './styles';
+import React, { useEffect } from 'react';
+import { GiBackwardTime, GiCalendar, GiRoundStar } from 'react-icons/gi';
+import Moment from 'react-moment';
 import './scss/style.scss';
 
 Moment.globalLocale = 'es';
@@ -160,17 +150,7 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
                         component="p"
                         className="dialog-card-price"
                       >
-                        <span style={{ color: '#000' }}>Cantidad: </span>
-                      </Typography>
-                    </Grid>
-
-                    <Grid item xs={12} sm={6}>
-                      <Typography
-                        color="textSecondary"
-                        component="p"
-                        className="dialog-card-price"
-                      >
-                        <span style={{ color: '#000' }}>Precio: </span>
+                        <span style={{ color: '#000' }}>Precio Final: </span>
                         {currencyFormatter.format(showPrice, { code: 'USD' })}
                       </Typography>
                     </Grid>

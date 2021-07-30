@@ -5,7 +5,7 @@ export interface FilmModel {
   name: string;
   price: number;
   cover: string;
-  released : string;
+  released: string;
   time: number;
   score: string;
   type: FilmTypeEnum;
