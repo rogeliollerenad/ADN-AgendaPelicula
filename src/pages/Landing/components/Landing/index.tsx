@@ -47,6 +47,7 @@ export const Landing: React.FC<LandingProps> = ({ onContinue }) => {
                   value={text}
                   helperText={showError && 'Entrada incorrecta.'}
                   onChange={(e) => setText(e.target.value)}
+                  data-cy="field-login"
                 />
                 <div className="wrap-input">
                   <Button
@@ -54,6 +55,7 @@ export const Landing: React.FC<LandingProps> = ({ onContinue }) => {
                     variant="contained"
                     color="primary"
                     className="bg-golden"
+                    data-cy="submit-login"
                     onClick={() => handleInput()}
                   >
                     Ingresar

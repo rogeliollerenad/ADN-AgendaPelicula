@@ -106,6 +106,7 @@ export const CardItem: React.FC<CardItemProps> = ({
             <Button
               size="small"
               color="primary"
+              data-cy="select-card"
               className="btn-add"
               disabled={disabled}
               disableRipple

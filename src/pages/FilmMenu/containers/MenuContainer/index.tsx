@@ -39,23 +39,27 @@ export const MenuContainer: React.FC = () => {
           >
             <BottomNavigationAction
               value={null}
+              data-cy="menu-all"
               label="Todos"
               icon={<GiTicket size="35" />}
             />
             <BottomNavigationAction
               label="Acción"
+              data-cy="menu-accion"
               value={FilmTypeEnum.ACCION}
               className="menu-item"
               icon={<GiPoliceCar size="35" />}
             />
             <BottomNavigationAction
               label="Aventura"
+              data-cy="menu-aventura"
               value={FilmTypeEnum.AVENTURA}
               className="menu-item"
               icon={<GiMountains size="35" />}
             />
             <BottomNavigationAction
               label="Drama"
+              data-cy="menu-drama"
               value={FilmTypeEnum.DRAMA}
               className="menu-item"
               icon={<GiDualityMask size="35" />}
