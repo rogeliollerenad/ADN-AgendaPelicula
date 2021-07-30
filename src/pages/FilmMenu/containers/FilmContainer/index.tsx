@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react';
-import { FilmMenuContext } from 'pages/FilmMenu/context/FilmMenuContext';
+import { Grid } from '@material-ui/core';
 import { FilmCard } from 'pages/FilmMenu/components/Cards/FilmCard';
 import { FilmConfirmAddDialog } from 'pages/FilmMenu/components/Dialogs/FilmConfirmAddDialog';
+import { FilmMenuContext } from 'pages/FilmMenu/context/FilmMenuContext';
 import { FilmModel } from 'pages/FilmMenu/models/FilmModel';
-import { Grid } from '@material-ui/core';
+import React, { useContext, useState } from 'react';
 import { useStyles } from './styles';
 
 export const FilmContainer: React.FC = () => {

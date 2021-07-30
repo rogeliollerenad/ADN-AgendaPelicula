@@ -26,7 +26,7 @@ export const MenuContainer: React.FC = () => {
     <>
       <Grid container className={classes.stick} spacing={0} direction="row">
         <Grid container item xs={12} md={4} lg={4} className="wrap-menulogo">
-          <img src={LogoCinema} alt="LogoCinema" style={{ width: '30%' }} />
+          <img src={LogoCinema} alt="LogoCinema" style={{ width: '37%' }} />
         </Grid>
         <Grid container item xs={12} md={8} lg={8} className="menu">
           <BottomNavigation

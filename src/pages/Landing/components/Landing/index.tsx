@@ -29,9 +29,10 @@ export const Landing: React.FC<LandingProps> = ({ onContinue }) => {
             }}
           />
           <div className="wrap-login p-l-50 p-r-50 p-t-72 p-b-50">
-            <img src={Logo} alt="Logo" />
+            <div className="img-logo">
+              <img src={Logo} alt="Logo" />
+            </div>
             <div className="login-formulario validate-form">
-              <span className="login-formulario-title p-b-59">CineApp</span>
               <div className="login-formulario-description">
                 <p>
                   Para ver la Cartelera de películas, primero háganos saber su
@@ -48,6 +49,7 @@ export const Landing: React.FC<LandingProps> = ({ onContinue }) => {
                   helperText={showError && 'Entrada incorrecta.'}
                   onChange={(e) => setText(e.target.value)}
                   data-cy="field-login"
+                  style={{ color: '#fff' }}
                 />
                 <div className="wrap-input">
                   <Button

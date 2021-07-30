@@ -17,7 +17,7 @@ export const FilmMenuPage: React.FC<RouteComponentProps> = () => {
       <FilmMenuProvider>
         <MenuContainer />
         <div className={classes.container}>
-          <h2>{username}</h2>
+          <h2 style={{ color: '#fff' }}>Hola, {username}</h2>
           <FilmContainer />
         </div>
       </FilmMenuProvider>
