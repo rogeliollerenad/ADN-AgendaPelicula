@@ -94,6 +94,7 @@ exports[`FilmCard Test should match snapshot 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text btn-add MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+          data-cy="select-card"
           tabindex="0"
           type="button"
         >

@@ -26,9 +26,11 @@ export const MaterialUIPickers = (props: {
           <KeyboardDatePicker
             disableToolbar
             variant="inline"
+            data-cy="select-day"
             format="MM/dd/yyyy"
             margin="normal"
             id="date-picker-inline"
+            data-testid="day_picker"
             label="Selecciona Fecha"
             value={selectedDate}
             onChange={handleDateChange}
@@ -39,6 +41,7 @@ export const MaterialUIPickers = (props: {
           <KeyboardTimePicker
             margin="normal"
             id="time-picker"
+            data-cy="select-hour"
             label="Selecciona Hora"
             value={selectedDate}
             onChange={handleDateChange}

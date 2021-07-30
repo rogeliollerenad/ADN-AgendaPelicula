@@ -11,6 +11,9 @@ describe('<Cards Peliculas>',() =>{
 
         cy.visit('/film');
         cy.get('[data-cy=select-card]').first().click();
+        cy.get('[data-cy=select-day]').first().click();
+        cy.get('[data-cy=select-hour]').first().click();
+
         
     });
 })
