@@ -35,6 +35,18 @@ pipeline {
         sh 'npm run test'
       }
     }
+
+    stage('Test coverage') {
+      steps {
+        sh 'npm run test:coverage'
+      }
+    }
+
+    stage('eslint') {
+      steps {
+        sh 'npm run lint'
+      }
+    }
     
 
    stage('Build') {

@@ -1,15 +1,13 @@
-import 'date-fns';
-import React, { Dispatch, SetStateAction } from 'react';
-import Moment from 'react-moment';
-import 'moment/locale/es';
-import moment from 'moment';
-import Grid from '@material-ui/core/Grid';
 import DateFnsUtils from '@date-io/date-fns';
+import Grid from '@material-ui/core/Grid';
 import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
   KeyboardDatePicker,
+  KeyboardTimePicker,
+  MuiPickersUtilsProvider,
 } from '@material-ui/pickers';
+import 'date-fns';
+import 'moment/locale/es';
+import React, { Dispatch, SetStateAction } from 'react';
 
 export const MaterialUIPickers = (props: {
   selectedDate: Date | null;

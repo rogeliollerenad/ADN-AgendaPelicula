@@ -15,7 +15,6 @@ import Moment from 'react-moment';
 import './scss/style.scss';
 
 Moment.globalLocale = 'es';
-Moment.globalLocal = true;
 
 export interface ConfirmAddBaseDialogProps {
   open: boolean;
@@ -42,7 +41,7 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
   children,
 }) => {
   const [selectedDate, setSelectedDate] = React.useState<Date | null>(
-    new Date('2014-08-18T21:11:54'),
+    new Date(),
   );
   const [showPrice, setShowPrice] = React.useState<number>(0);
 
@@ -144,7 +143,7 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
                     container
                     className="dialog-card-wrap-price"
                   >
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={12}>
                       <Typography
                         color="textSecondary"
                         component="p"
