@@ -50,12 +50,17 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
     const weekDay = dateHour.isoWeekday();
     const hour = dateHour.format('LT');
 
+    const hourLimit = '20:00';
+    const dayLimit = 6;
+    const porcen10 = 1.1;
+    const porcen15 = 1.15;
+
     setShowPrice(price);
-    if (weekDay <= 6 && hour > '20:00') {
-      setShowPrice(price * 1.1);
+    if (weekDay <= dayLimit && hour > hourLimit) {
+      setShowPrice(price * porcen10);
     }
-    if (weekDay > 6) {
-      setShowPrice(price * 1.15);
+    if (weekDay > dayLimit) {
+      setShowPrice(price * porcen15);
     }
   }, [selectedDate, price]);
 
