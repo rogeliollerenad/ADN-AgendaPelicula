@@ -16,16 +16,10 @@ export const MaterialUIPickers = (props: {
   setSelectedDate: Dispatch<SetStateAction<Date | null>>;
 }) => {
   const { selectedDate, setSelectedDate } = props;
-  // The first commit of Material-UI
 
   const handleDateChange = (date: Date | null) => {
     setSelectedDate(date);
   };
-
-  // const FechaHora = moment(selectedDate);
-  // const DiaSemana = FechaHora.isoWeekday();
-  // const Hora = FechaHora.format('LT');
-  // console.log(DiaSemana, Hora);
 
   return (
     <>

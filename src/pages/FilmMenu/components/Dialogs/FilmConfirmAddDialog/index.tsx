@@ -45,7 +45,7 @@ export const FilmConfirmAddDialog: React.FC<FilmConfirmAddDialogProps> = ({
       time={film.time}
       released={film.released}
       score={film.score}
-      price={currencyFormatter.format(film ? film.price : 0, { code: 'USD' })}
+      price={film ? film.price : 0}
     >
       <ConfirmationButton
         LeftElement={

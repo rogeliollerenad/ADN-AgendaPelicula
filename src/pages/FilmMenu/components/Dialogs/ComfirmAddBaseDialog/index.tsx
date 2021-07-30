@@ -32,7 +32,7 @@ export interface ConfirmAddBaseDialogProps {
   title: string;
   description: string;
   coverImage: string;
-  price: string;
+  price: number;
   released: string;
   time: number;
   score: string;
@@ -53,14 +53,21 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
   const [selectedDate, setSelectedDate] = React.useState<Date | null>(
     new Date('2014-08-18T21:11:54'),
   );
-
   const [showPrice, setShowPrice] = React.useState<number>(0);
 
-  // dia 1 - 6 && < 20:00 hr --> ShowPrice es igual a price
-  // dia 1 - 6 && > 20:00 hr --> ShowPrice es igual a price * 1.1
-  // dia 7  --> ShowPrice es igual a price * 1.15
-
   useEffect(() => {
+    const dateHour = moment(selectedDate);
+    const weekDay = dateHour.isoWeekday();
+    const hour = dateHour.format('LT');
+
+    setShowPrice(price);
+    if (weekDay <= 6 && hour > '20:00') {
+      setShowPrice(price * 1.1);
+    }
+    if (weekDay > 6) {
+      setShowPrice(price * 1.15);
+    }
+
     console.log(selectedDate);
     console.log(price);
   }, [selectedDate, price]);
@@ -166,7 +173,7 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
                         className="dialog-card-price"
                       >
                         <span style={{ color: '#000' }}>Precio: </span>
-                        {price}
+                        {showPrice}
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
