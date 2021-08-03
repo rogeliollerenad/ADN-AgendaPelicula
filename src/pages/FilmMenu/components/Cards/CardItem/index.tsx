@@ -1,18 +1,17 @@
-import React from 'react';
-import Moment from 'react-moment';
-import 'moment/locale/es';
-import moment from 'moment';
 import { Button, Grid, Typography } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import { useInView } from 'react-intersection-observer';
+import 'moment/locale/es';
 import { FilmImage } from 'pages/FilmMenu/components/FilmImage';
+import React from 'react';
 import { GiBackwardTime } from 'react-icons/gi';
-import { useStyles } from './styles';
+import { useInView } from 'react-intersection-observer';
+import Moment from 'react-moment';
 import './scss/custom.scss';
+import { useStyles } from './styles';
 
 Moment.globalLocale = 'es';
 Moment.globalLocal = true;
@@ -55,7 +54,7 @@ export const CardItem: React.FC<CardItemProps> = ({
         <Card>
           <CardActionArea>
             <CardMedia title={title}>
-              <FilmImage cover={cover} className={classes.img} />
+              <FilmImage cover={cover} className="img-card" />
             </CardMedia>
             <CardContent className="card-wrap-content">
               <Typography gutterBottom variant="h5" component="h2">

@@ -9,12 +9,14 @@ import 'date-fns';
 import 'moment/locale/es';
 import React, { Dispatch, SetStateAction } from 'react';
 
-export const MaterialUIPickers = (props: {
+export interface PropsCalendar {
   selectedDate: Date | null;
   setSelectedDate: Dispatch<SetStateAction<Date | null>>;
+}
+export const MaterialUIPickers: React.FC<PropsCalendar> = ({
+  selectedDate,
+  setSelectedDate,
 }) => {
-  const { selectedDate, setSelectedDate } = props;
-
   const handleDateChange = (date: Date | null) => {
     setSelectedDate(date);
   };

@@ -2,9 +2,22 @@ import React, { createContext, useEffect, useRef, useState } from 'react';
 import { SessionState } from 'context/models/SessionState';
 import * as sessionService from '../services/sessionService';
 
-export const useStateContainer = (initialState: SessionState = {}) => {
+export const useStateContainer = (
+  initialState: SessionState = {},
+): {
+  data: {
+    username: string | undefined;
+    sessionId: string | undefined;
+  };
+  mutations: {
+    setUsername: React.Dispatch<React.SetStateAction<string | undefined>>;
+    setAlert: React.Dispatch<React.SetStateAction<string>>;
+  };
+  alert: string;
+} => {
   const [username, setUsername] = useState(initialState.username);
   const [sessionId, setSessionId] = useState(initialState.sessionId);
+  const [alert, setAlert] = useState('');
   const usernameRef = useRef(false);
 
   useEffect(() => {
@@ -20,7 +33,8 @@ export const useStateContainer = (initialState: SessionState = {}) => {
 
   return {
     data: { username, sessionId },
-    mutations: { setUsername },
+    mutations: { setUsername, setAlert },
+    alert,
   };
 };
 

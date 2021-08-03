@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-    <file path="D:\ticket\src\pages\FilmMenu\services\filmService.spec.ts">
-        <testCase name="film service test should fetch filmMenu" duration="128"/>
-        <testCase name="film service test should filter filmMenu" duration="1"/>
-    </file>
     <file path="D:\ticket\src\context\SessionContext.spec.ts">
-        <testCase name="Session Context text debería crear sesion" duration="26"/>
-    </file>
-    <file path="D:\ticket\src\pages\FilmMenu\components\FilmImage\FilmImage.spec.tsx">
-        <testCase name="FilmImage Test should match snapshot" duration="32"/>
+        <testCase name="Session Context text debería crear sesion" duration="41"/>
     </file>
     <file path="D:\ticket\src\pages\FilmMenu\components\Cards\FilmCard\FilmCard.spec.tsx">
-        <testCase name="FilmCard Test should match snapshot" duration="219"/>
+        <testCase name="FilmCard Test should match snapshot" duration="292"/>
     </file>
 </testExecutions>

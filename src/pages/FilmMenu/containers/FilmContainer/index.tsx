@@ -4,7 +4,6 @@ import { FilmConfirmAddDialog } from 'pages/FilmMenu/components/Dialogs/FilmConf
 import { FilmMenuContext } from 'pages/FilmMenu/context/FilmMenuContext';
 import { FilmModel } from 'pages/FilmMenu/models/FilmModel';
 import React, { useContext, useState } from 'react';
-import { useStyles } from './styles';
 
 export const FilmContainer: React.FC = () => {
   const {

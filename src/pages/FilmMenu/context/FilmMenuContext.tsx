@@ -10,7 +10,18 @@ export interface FilmMenuState {
   allMenu?: MenuModel;
 }
 
-export const useStateContainer = (initialState: FilmMenuState = {}) => {
+export const useStateContainer = (
+  initialState: FilmMenuState = {},
+): {
+  data: {
+    filmMenu: FilmModel[];
+    filmType: FilmTypeEnum | null;
+    allMenu: MenuModel;
+  };
+  mutations: {
+    setFilmType: React.Dispatch<React.SetStateAction<FilmTypeEnum | null>>;
+  };
+} => {
   const [allMenu, setAllMenu] = useState(initialState.allMenu || { films: [] });
   const [filmMenu, setFilmMenu] = useState(initialState.films || []);
 
