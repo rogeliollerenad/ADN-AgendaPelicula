@@ -5,7 +5,7 @@ import { Slide } from '@material-ui/core';
 
 export const Transition = React.forwardRef(function Transition(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any,react/require-default-props
-  props: TransitionProps & { children?: React.ReactElement<any, any> },
+  props: TransitionProps & { children?: React.ReactElement<string, string> },
   ref: React.Ref<unknown>,
 ) {
   // eslint-disable-next-line react/jsx-props-no-spreading

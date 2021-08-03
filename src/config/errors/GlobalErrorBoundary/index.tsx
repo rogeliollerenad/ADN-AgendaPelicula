@@ -1,9 +1,17 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any */
 
-import React, { ErrorInfo } from 'react';
+import React, { ErrorInfo, ReactNode } from 'react';
 
-export class GlobalErrorBoundary extends React.Component<any, any> {
-  constructor(props: any) {
+interface Props {
+  children: ReactNode;
+}
+
+interface State {
+  hasError: boolean;
+}
+
+export class GlobalErrorBoundary extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = { hasError: false };
   }
