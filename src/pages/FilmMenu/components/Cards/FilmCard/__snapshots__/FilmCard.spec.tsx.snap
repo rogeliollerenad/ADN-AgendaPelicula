@@ -19,7 +19,7 @@ exports[`FilmCard Test should match snapshot 1`] = `
         >
           <img
             alt="Film item"
-            class="makeStyles-img-3"
+            class="img-card"
             src="/images/film.jpg"
           />
         </div>
