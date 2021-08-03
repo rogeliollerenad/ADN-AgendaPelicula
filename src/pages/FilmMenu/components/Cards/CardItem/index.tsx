@@ -11,7 +11,6 @@ import { GiBackwardTime } from 'react-icons/gi';
 import { useInView } from 'react-intersection-observer';
 import Moment from 'react-moment';
 import './scss/custom.scss';
-import { useStyles } from './styles';
 
 Moment.globalLocale = 'es';
 Moment.globalLocal = true;
@@ -43,8 +42,7 @@ export const CardItem: React.FC<CardItemProps> = ({
   disabled,
   onSelected,
 }) => {
-  const classes = useStyles();
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     threshold: 0,
     triggerOnce: true,
   });
