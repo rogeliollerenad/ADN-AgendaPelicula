@@ -5,13 +5,13 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { Transition } from 'components/Transition';
 import currencyFormatter from 'currency-formatter';
-import moment from 'moment';
 import 'moment/locale/es';
 import { MaterialUIPickers } from 'pages/FilmMenu/components/Calendar';
 import { FilmImage } from 'pages/FilmMenu/components/FilmImage';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { GiBackwardTime, GiCalendar, GiRoundStar } from 'react-icons/gi';
 import Moment from 'react-moment';
+import CalcularPrecio from '../../../../../utils/CalcularPrecio';
 import './scss/style.scss';
 
 Moment.globalLocale = 'es';
@@ -43,27 +43,7 @@ export const ConfirmAddBaseDialog: React.FC<ConfirmAddBaseDialogProps> = ({
   const [selectedDate, setSelectedDate] = React.useState<Date | null>(
     new Date(),
   );
-  const [showPrice, setShowPrice] = React.useState<number>(0);
-
-  useEffect(() => {
-    const dateHour = moment(selectedDate);
-    const weekDay = dateHour.isoWeekday();
-    const hour = dateHour.format('LT');
-
-    const hourLimit = '20:00';
-    const dayLimit = 6;
-    const porcen10 = 1.1;
-    const porcen15 = 1.15;
-
-    setShowPrice(price);
-    if (weekDay <= dayLimit && hour > hourLimit) {
-      setShowPrice(price * porcen10);
-    }
-    if (weekDay > dayLimit) {
-      setShowPrice(price * porcen15);
-    }
-  }, [selectedDate, price]);
-
+  const { showPrice } = CalcularPrecio(price, selectedDate);
   return (
     <Dialog
       open={open}
