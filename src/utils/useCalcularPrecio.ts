@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import moment from 'moment';
 
-const CalcularPrecio = (price: number, selectedDate: Date | null) => {
+const CalcularPrecio = (price: number, selectedDate: Date | null): number => {
   const [showPrice, setShowPrice] = React.useState<number>(price);
   useEffect(() => {
     const dateHour = moment(selectedDate);
@@ -20,9 +20,7 @@ const CalcularPrecio = (price: number, selectedDate: Date | null) => {
       setShowPrice(price * porcen15);
     }
   }, [price, selectedDate]);
-  return {
-    showPrice,
-  };
+  return showPrice;
 };
 
 export default CalcularPrecio;
