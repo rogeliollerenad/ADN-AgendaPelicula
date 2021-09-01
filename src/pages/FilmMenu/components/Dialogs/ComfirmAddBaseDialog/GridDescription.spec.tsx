@@ -1,13 +1,12 @@
 /* eslint-disable react/jsx-props-no-spreading, @typescript-eslint/no-var-requires, global-require */
 
-import React from 'react';
+import { render } from '@testing-library/react';
 import MockDate from 'mockdate';
 import {
   GridDescription,
   PropsDataDescription,
 } from 'pages/FilmMenu/components/Dialogs/ComfirmAddBaseDialog/GridDescription';
-import { render } from '@testing-library/react';
-import moment from 'moment';
+import React from 'react';
 
 jest.mock('react-intersection-observer', () => {
   const { factory } = require('tests/mocks/react-intersection-observer.mock');
