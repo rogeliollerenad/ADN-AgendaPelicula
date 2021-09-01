@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardItem Test should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-4"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <button
+        class="MuiButtonBase-root MuiCardActionArea-root"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          class="MuiCardMedia-root"
+          title="Its over"
+        >
+          <img
+            alt="Film item"
+            class="img-card"
+            src="/images/movie5.jpg"
+          />
+        </div>
+        <div
+          class="MuiCardContent-root card-wrap-content"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+          >
+            Its over
+          </h2>
+          <h6
+            class="MuiTypography-root card-wrap-item MuiTypography-h6"
+          >
+            Estreno: 
+            <time
+              class="card-item-time"
+              datetime="972018000000"
+            >
+              20 de oct. de 2000
+            </time>
+          </h6>
+          <h6
+            class="MuiTypography-root card-wrap-item MuiTypography-h6"
+          >
+            Calificación: 
+            <span
+              class="card-item-score"
+            >
+              4,5
+            </span>
+          </h6>
+          <h6
+            class="MuiTypography-root card-wrap-item MuiTypography-h6"
+          >
+            Duración: 
+            <span
+              class="card-item-time"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M208.242 24.629l-52.058 95.205 95.207 52.059 17.271-31.586-42.424-23.198A143.26 143.26 0 0 1 256 114c78.638 0 142 63.362 142 142s-63.362 142-142 142-142-63.362-142-142c0-16.46 2.785-32.247 7.896-46.928l-32.32-16.16C82.106 212.535 78 233.798 78 256c0 98.093 79.907 178 178 178s178-79.907 178-178S354.093 78 256 78c-13.103 0-25.875 1.44-38.18 4.148l22.008-40.25-31.586-17.27zm104.27 130.379L247 253.275V368h18V258.725l62.488-93.733-14.976-9.984z"
+                />
+              </svg>
+              170
+               Min.
+            </span>
+          </h6>
+          <p
+            class="MuiTypography-root label-highLight MuiTypography-body2 MuiTypography-colorTextSecondary"
+          >
+            Lorem
+          </p>
+        </div>
+        <span
+          class="MuiCardActionArea-focusHighlight"
+        />
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+      <div
+        class="MuiCardActions-root card-wrap-actions MuiCardActions-spacing"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text btn-add MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+          data-cy="select-card"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Texto Buttom
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

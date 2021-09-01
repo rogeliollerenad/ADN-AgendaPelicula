@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-    <file path="D:\ticket\src\pages\FilmMenu\components\Cards\FilmCard\FilmCard.spec.tsx">
-        <testCase name="FilmCard Test should match snapshot" duration="348"/>
-    </file>
-    <file path="D:\ticket\src\pages\FilmMenu\components\Dialogs\ComfirmAddBaseDialog\GridDescription.spec.tsx">
-        <testCase name="GridDescription Test should match snapshot" duration="479"/>
-    </file>
-    <file path="D:\ticket\src\pages\FilmMenu\services\filmService.spec.ts">
-        <testCase name="film service test should fetch filmMenu" duration="155"/>
-        <testCase name="film service test should filter filmMenu" duration="2"/>
-    </file>
-    <file path="D:\ticket\src\pages\FilmMenu\components\Calendar\Calendar.spec.tsx">
-        <testCase name="Prueba Calendario should match snapshot" duration="236"/>
-    </file>
-    <file path="D:\ticket\src\context\SessionContext.spec.ts">
-        <testCase name="Session Context text debería crear sesion" duration="29"/>
-    </file>
-    <file path="D:\ticket\src\pages\FilmMenu\components\FilmImage\FilmImage.spec.tsx">
-        <testCase name="FilmImage Test should match snapshot" duration="9"/>
+    <file path="D:\ticket\src\pages\FilmMenu\components\Cards\CardItem\CardItem.spec.tsx">
+        <testCase name="CardItem Test should match snapshot" duration="267"/>
     </file>
 </testExecutions>
